@@ -17,7 +17,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: Shirry
-  tagline: Stay Foolish
+  tagline: 有所为，有所止
   date_format: "%b %-d, %Y"
   style: black
   showNav: true
