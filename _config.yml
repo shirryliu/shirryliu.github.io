@@ -19,7 +19,7 @@ texture:
   title: Shirry
   tagline: Stay Foolish
   date_format: "%b %-d, %Y"
-  style: black
+  style: blue
   showNav: true
   showPicker: false
 
