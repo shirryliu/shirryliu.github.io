@@ -3,9 +3,7 @@ layout: post
 title:  "搭建vs code的c/c++编译环境"
 date:   2019-09-24
 ---
-搭建vs code的c/c++编译环境
-===
----------
+
 **卸载vs所有的插件**
 <br>
   
