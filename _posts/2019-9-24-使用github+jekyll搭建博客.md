@@ -1,8 +1,12 @@
 ---
 layout: post
 title:  "使用github+jekyll搭建博客"
-date:   2019-09-24
+date:   2019-09-24 16:38
 ---
+
+写下来以防止哪天我又忘了然后再重建一个Repositories接着头秃
+
+---------
 
 挑选主题：<http://jekyllthemes.org/>
 <br><br>
