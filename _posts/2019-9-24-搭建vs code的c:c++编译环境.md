@@ -7,14 +7,14 @@ date:   2019-09-24
 **卸载vs所有的插件**
 <br>
   
-`sudo rm -rf $HOME/Library/Application\ Support/Code` 
-`sudo rm -rf $HOME/.vscode`  
+`sudo rm -rf $HOME/Library/Application\ Support/Code`<br>
+`sudo rm -rf $HOME/.vscode`
 <br>
 
 ---------
 **配置编译文件tasks.json**  
 
-```
+```javascript
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
@@ -50,7 +50,7 @@ date:   2019-09-24
 ---------
 **添加“launch.json”文件配置**
 
-```
+```javascript
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -85,4 +85,4 @@ date:   2019-09-24
 手动编译快捷键“⇧⌘B”。
 
 ---------
->https://blog.csdn.net/deaidai/article/details/82955010
+<a href=https://blog.csdn.net/deaidai/article/details/82955010 value=”参考资料“>
