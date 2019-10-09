@@ -11,4 +11,4 @@ date:   2019-10-09 23:29
 ```
 sudo mv /etc/bashrc_Apple_Terminal /etc/bashrc_Apple_Terminal-disabled
 ```
->https://superuser.com/questions/975678/strange-output-from-terminal-exit-command-is-this-a-virus
+<https://superuser.com/questions/975678/strange-output-from-terminal-exit-command-is-this-a-virus>
