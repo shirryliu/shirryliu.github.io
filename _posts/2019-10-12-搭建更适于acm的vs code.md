@@ -7,8 +7,8 @@ date:   2019-10-12 22:33
 
 ---------
 
-被硬生生卡在freopen上。
-在launch.json文件中修改args参数。
+被硬生生卡在freopen上。<br>
+在launch.json文件中修改args参数。<br>
 添加重定向：
 ```javascript
 "args": [
@@ -103,3 +103,5 @@ task.json为：
     ]
 }
 ```
+<br>
+<https://cliuyang.cn/2019/07/12/VScode-C-Algorithmic-Competition/index.html>
