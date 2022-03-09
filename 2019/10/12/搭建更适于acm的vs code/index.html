@@ -77,39 +77,24 @@
 <div class="main">
     <div class="content-inner">
         <div class="posts">
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2022/03/09/hello-world/">Hello World</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2022-03-09</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-                    <div class="read-more">
-                        <a href="/2022/03/09/hello-world/" class="read-more-link">
-                            ReadMore
-                            <i class="iconfont icon-readmore"></i>
-                        </a>
-                    </div>
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2019/10/12/%E6%90%AD%E5%BB%BA%E6%9B%B4%E9%80%82%E4%BA%8Eacm%E7%9A%84vs%20code/">搭建更适于acm的vs code</a></h2>
-            </div>
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">搭建更适于acm的vs code</h2>
             <div class="post-meta">
                 <span class="post-time">2019-10-12</span>
                 
+                <span class="post-visit"> visited：<span id="busuanzi_value_page_pv"></span></span>
             </div>
-            <div class="post-content">
-                
-                    <p>今天我好寡(不是</p>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <p>今天我好寡(不是</p>
 <hr>
 <p>被硬生生卡在freopen上。<br><br>在launch.json文件中修改args参数。<br><br>添加重定向：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;args&quot;</span>: [</span><br><span class="line">    <span class="string">&quot;&lt;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;$&#123;workspaceFolder&#125;/data/data.in&quot;</span>,</span><br><span class="line">    <span class="string">&quot;&gt;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;$&#123;workspaceFolder&#125;/data/data.out&quot;</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
@@ -121,111 +106,29 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// See https://go.microsoft.com/fwlink/?LinkId=733558</span></span><br><span class="line">    <span class="comment">// for the documentation about the tasks.json format</span></span><br><span class="line">    <span class="string">&quot;version&quot;</span>: <span class="string">&quot;2.0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;tasks&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;label&quot;</span>: <span class="string">&quot;g++&quot;</span>,</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;shell&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;g++&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-g&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;file&#125;&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-o&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;fileBasenameNoExtension&#125;.out&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="string">&quot;problemMatcher&quot;</span>: &#123;  <span class="comment">//正则匹配，删除无用符号</span></span><br><span class="line">                <span class="string">&quot;owner&quot;</span>: <span class="string">&quot;cpp&quot;</span>,</span><br><span class="line">                <span class="string">&quot;fileLocation&quot;</span>: [<span class="string">&quot;relative&quot;</span>, <span class="string">&quot;$&#123;workspaceRoot&#125;&quot;</span>],</span><br><span class="line">                <span class="string">&quot;pattern&quot;</span>: &#123;</span><br><span class="line">                    <span class="string">&quot;regexp&quot;</span>: <span class="string">&quot;^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$&quot;</span>,</span><br><span class="line">                    <span class="string">&quot;file&quot;</span>: <span class="number">1</span>,</span><br><span class="line">                    <span class="string">&quot;line&quot;</span>: <span class="number">2</span>,</span><br><span class="line">                    <span class="string">&quot;column&quot;</span>: <span class="number">3</span>,</span><br><span class="line">                    <span class="string">&quot;severity&quot;</span>: <span class="number">4</span>,</span><br><span class="line">                    <span class="string">&quot;message&quot;</span>: <span class="number">5</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <br>
 <https://cliuyang.cn/2019/07/12/VScode-C-Algorithmic-Competition/index.html>
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2019/10/09/MacOS%20bash%20session/">MacOS Bash session的一些设置</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2019-10-09</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>第一次对terminal进行一些配置。</p>
-<hr>
-<p>在使用terminal的时候下端会出现一堆乱七八杂的东西。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mv /etc/bashrc_Apple_Terminal /etc/bashrc_Apple_Terminal-disabled</span><br></pre></td></tr></table></figure>
-<p><a target="_blank" rel="noopener" href="https://superuser.com/questions/975678/strange-output-from-terminal-exit-command-is-this-a-virus">https://superuser.com/questions/975678/strange-output-from-terminal-exit-command-is-this-a-virus</a></p>
-
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2019/09/24/%E4%BD%BF%E7%94%A8github+jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">使用github+jekyll搭建博客</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2019-09-24</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>写下来以防止哪天我又忘了然后再重建一个Repositories接着头秃</p>
-<hr>
-<p>挑选主题：<a target="_blank" rel="noopener" href="http://jekyllthemes.org/">http://jekyllthemes.org/</a><br><br><br><br>Homepage-&gt;fork-&gt;Settings-&gt;Rename<br><br><br><br>安装desktop github：<a target="_blank" rel="noopener" href="https://desktop.github.com/">https://desktop.github.com/</a><br><br><br><br>Clone or download-&gt;Open in Desktop<br><br><br><br>然后就可以根据README或者页面对比来修改自己的Blog啦<br><br><br>当然修改过后的文件不要忘了点Commit to master，接着Push。</p>
-<hr>
-<p>将文章放在_posts文件夹下，名称格式为<strong>年-月-日-标题.md</strong><br>还有文章的开头需要写下：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="attr">layout</span>: post</span><br><span class="line"><span class="attr">title</span>:  <span class="string">&quot;?&quot;</span></span><br><span class="line"><span class="attr">description</span>: </span><br><span class="line"><span class="attr">date</span>:   xxxx-xx-xx</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<hr>
-<p>参考资料：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Hanghang_/article/details/78944672">https://blog.csdn.net/Hanghang_/article/details/78944672</a></p>
-
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2019/09/24/%E6%90%AD%E5%BB%BAvs%20code%E7%9A%84c:c++%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/">搭建vs code的c/c++编译环境</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2019-09-24</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>搭建了好几次每次都好粗糙。这次终于满意啦～</p>
-<hr>
-<p><strong>卸载vs所有的插件</strong><br><br></p>
-<p><code>sudo rm -rf $HOME/Library/Application\ Support/Code</code><br><br><code>sudo rm -rf $HOME/.vscode</code><br><br></p>
-<hr>
-<p><strong>配置编译文件tasks.json</strong>  </p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// See https://go.microsoft.com/fwlink/?LinkId=733558</span></span><br><span class="line">    <span class="comment">// for the documentation about the tasks.json format</span></span><br><span class="line">    <span class="string">&quot;version&quot;</span>: <span class="string">&quot;2.0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;tasks&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;label&quot;</span>: <span class="string">&quot;g++&quot;</span>,</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;shell&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;g++&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-g&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;file&#125;&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-o&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;fileBasenameNoExtension&#125;.out&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="string">&quot;problemMatcher&quot;</span>: &#123;  <span class="comment">//正则匹配，删除无用符号</span></span><br><span class="line">                <span class="string">&quot;owner&quot;</span>: <span class="string">&quot;cpp&quot;</span>,</span><br><span class="line">                <span class="string">&quot;fileLocation&quot;</span>: [<span class="string">&quot;relative&quot;</span>, <span class="string">&quot;$&#123;workspaceRoot&#125;&quot;</span>],</span><br><span class="line">                <span class="string">&quot;pattern&quot;</span>: &#123;</span><br><span class="line">                    <span class="string">&quot;regexp&quot;</span>: <span class="string">&quot;^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$&quot;</span>,</span><br><span class="line">                    <span class="string">&quot;file&quot;</span>: <span class="number">1</span>,</span><br><span class="line">                    <span class="string">&quot;line&quot;</span>: <span class="number">2</span>,</span><br><span class="line">                    <span class="string">&quot;column&quot;</span>: <span class="number">3</span>,</span><br><span class="line">                    <span class="string">&quot;severity&quot;</span>: <span class="number">4</span>,</span><br><span class="line">                    <span class="string">&quot;message&quot;</span>: <span class="number">5</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>添加“launch.json”文件配置</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// Use IntelliSense to learn about possible attributes.</span></span><br><span class="line">    <span class="comment">// Hover to view descriptions of existing attributes.</span></span><br><span class="line">    <span class="comment">// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387</span></span><br><span class="line">    <span class="string">&quot;version&quot;</span>: <span class="string">&quot;0.2.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;configurations&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;(lldb) Launch&quot;</span>,</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;cppdbg&quot;</span>,</span><br><span class="line">            <span class="string">&quot;request&quot;</span>: <span class="string">&quot;launch&quot;</span>,</span><br><span class="line">            <span class="string">&quot;program&quot;</span>: <span class="string">&quot;$&#123;workspaceFolder&#125;/$&#123;fileBasenameNoExtension&#125;.out&quot;</span>, <span class="comment">// 将要进行调试的程序的路径</span></span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [], <span class="comment">// 程序调试时传递给程序的命令行参数，一般设为空即可</span></span><br><span class="line">            <span class="string">&quot;stopAtEntry&quot;</span>: <span class="literal">false</span>, <span class="comment">// 设为true时程序将暂停在程序入口处，一般设置为false</span></span><br><span class="line">            <span class="string">&quot;cwd&quot;</span>: <span class="string">&quot;$&#123;workspaceFolder&#125;&quot;</span>, <span class="comment">// 调试程序时的工作目录，一般为$&#123;workspaceRoot&#125;即代码所在目录</span></span><br><span class="line">            <span class="string">&quot;environment&quot;</span>: [],</span><br><span class="line">            <span class="string">&quot;externalConsole&quot;</span>: <span class="literal">true</span>, <span class="comment">// 调试时是否显示控制台窗口，一般设置为true显示控制台</span></span><br><span class="line">            <span class="string">&quot;MIMode&quot;</span>: <span class="string">&quot;lldb&quot;</span>,</span><br><span class="line">            <span class="string">&quot;preLaunchTask&quot;</span>: <span class="string">&quot;g++&quot;</span>, <span class="comment">// 调试会话开始前执行的任务，这里为认为名字</span></span><br><span class="line">            <span class="string">&quot;setupCommands&quot;</span>: [</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="string">&quot;description&quot;</span>: <span class="string">&quot;Enable pretty -printing for gdb&quot;</span>,</span><br><span class="line">                    <span class="string">&quot;text&quot;</span>: <span class="string">&quot;-enable-pretty-printing&quot;</span>,</span><br><span class="line">                    <span class="string">&quot;ignoreFailures&quot;</span>: <span class="literal">true</span></span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p>快捷键“F5”编译运行。<br><br>手动编译快捷键“⇧⌘B”。</p>
-<hr>
-<p>参考资料：<a target="_blank" rel="noopener" href="https://blog.csdn.net/deaidai/article/details/82955010">https://blog.csdn.net/deaidai/article/details/82955010</a></p>
-
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2019/09/23/Hi/">Hi</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2019-09-23</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p><strong>sooooo hard！</strong></p>
-<hr>
-<blockquote>
-<p>can you hear me?</p>
-</blockquote>
-
-                
-            </div>
-        </article>
-    
+        </div>
+        
+    </article>
 </div>
 <div class="paginator">
     
         
+            <a class="prev" href="/2022/03/09/hello-world/">
+                <i class="iconfont icon-prev"></i>
+                <span class="nav-default">Hello World</span>
+                <span class="nav-mobile">Prev</span>
+            </a>
+        
+        
+            <a class="next" href="/2019/10/09/MacOS%20bash%20session/">
+                <span class="nav-default">MacOS Bash session的一些设置</span>
+                <span class="nav-mobile">Next</span>
+                <i class="iconfont icon-next"></i>
+            </a>
         
     
 </div>
-
+<div id="comment-container"></div>
     </div>
 </div>
 <footer class="footer-social">
